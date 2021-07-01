@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_viajecontratado"
+            android:icon="@drawable/travel"
+            android:title="@string/menu_viajecontratado" />
+        <item
+            android:id="@+id/nav_vueloturista"
+            android:icon="@drawable/airplane"
+            android:title="@string/menu_vueloturista" />
+    </group>
+</menu>

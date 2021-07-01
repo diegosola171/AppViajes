@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="325dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pensión:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:id="@+id/tv_pension"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Precio por la estadía"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="10dp">
+
+        <android.widget.Button
+            android:id="@+id/btn_fentrada"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:text="Fecha Entrada"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/et_fentrada"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:inputType="date"
+            android:maxLength="10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="10dp">
+
+        <android.widget.Button
+            android:id="@+id/btn_fsalida"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:text="Fecha Salida"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/purple_700"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/et_fsalida"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:inputType="date"
+            android:maxLength="10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="Hotel:"
+            android:textColor="@color/black"
+            android:layout_marginEnd="10dp"/>
+        <Spinner
+            android:id="@+id/sp_hotel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="Sucursal:"
+            android:textColor="@color/black"
+            android:layout_marginEnd="10dp"/>
+        <Spinner
+            android:id="@+id/sp_sucursal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancelar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Cancelar"
+            android:textSize="20dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_aceptar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Aceptar"
+            android:textSize="20dp"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</LinearLayout>
